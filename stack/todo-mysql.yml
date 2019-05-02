@@ -17,7 +17,7 @@ services:
       - todoapp
 
   slave:
-    image: registry.5000/ch04/tododb:latest
+    image: registry:5000/ch04/tododb:latest
     deploy:
       replicas: 2
       placement:
