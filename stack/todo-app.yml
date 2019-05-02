@@ -29,7 +29,7 @@ services:
       placement:
         constraints: [node.role != manager]
     environment:
-      TODO_BIND: "8080"
+      TODO_BIND: ":8080"
       TODO_MASTER_URL: "gihyo:gihyo@tcp(todo_mysql_master:3306)/tododb?parseTime=true"
       TODO_SLAVE_URL: "gihyo:gihyo@tcp(todo_mysql_slave:3306)/tododb?parseTime=true"
     networks:
