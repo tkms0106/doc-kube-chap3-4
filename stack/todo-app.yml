@@ -11,10 +11,10 @@ services:
     environment:
       WORKER_PROCESSES: 2
       WORKER_CONNECTIONS: 1024
-      KEEPALIVE:TIMEOUT: 65
+      KEEPALIVE_TIMEOUT: 65
       GZIP: "on"
       BACKEND_HOST: todo_app_api:8080
-      BACKEND_MAXFAILS: 3
+      BACKEND_MAX_FAILS: 3
       BACKEND_FAIL_TIMEOUT: 10s
       SERVER_PORT: 80
       SERVER_NAME: todo_app_nginx
